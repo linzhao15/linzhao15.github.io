@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Interactive 1854 Cholera Map</title>
+	  <script type="text/javascript" src="d3.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1 style="font-family:Georgia;
+        color:#43353A;
+        text-align:center;
+         margin-top:25px;
+         margin-right:35px;
+         margin-left:35px;
+         border: 0;
+         background:#b0c4de;
+         padding-top: 70px;
+         padding-right: 0px;
+         padding-bottom: 70px;
+         padding-left: 0px;
+         border:double
+       ">London 1854 Cholera Interactive Map by John Snow
+       <br>
+
+      </h1>
+    </div>
+    <br>
+    <h2 style="text-align:center;color:#43353A;font-family:Georgia;margin-bottom:35px;">
+    Documentation
+    </h2>
+
+    <img src="https://farm5.staticflickr.com/4485/37279657862_97d37615b8.jpg" width="370" height="370" alt="Design Process 1" HSPACE=35 VSPACE=10 align="left"/>
+    <img src="https://farm5.staticflickr.com/4417/37261946806_dde5618a59.jpg" width="370" height="370" alt="Design Process 2" HSPACE=4 VSPACE=10 />
+    <img src="https://farm5.staticflickr.com/4422/37279659092_3e8ff55163.jpg" width="370" height="370" alt="Design Process 3" HSPACE=35 VSPACE=10 />
+    <table border="0">
+
+
+          <tr>
+              <td width=1210 >
+
+                  <h3 style="color:#43353A;font-family:Times;margin-left:35px">Design process and Rationale of my design choices</h3>
+                    <p style="color:#584b50;font-family:Georgia;text-align:justify;margin-left:35px;margin-right:0px">
+                    <br>
+                    First, I need to find out what is the users’ requirement. The users want to see the whole deaths’ locations in the map, and they also have the requirement of encoding the number of deaths in each day by filtering different dates. It should affect both on the map and the graph. The users may want to know the difference number of deaths and locations between different sexes and ages, and they could easily see on the map whether each victim was male or female, or the age of each victim, and those could also change by dates. To help users conduct an investigation, this visualization tool should show the changes on the map and the graph simultaneously.
+                    <br>
+
+To fulfill those requirements of users, I made a list of the required functions of this tool:
+<br>
+<br>
+1. The tool shows parallel layout on the webpage for users to see both map and graphs at the same time.
+<br>
+<br>
+2. This tool provides a line graph and a bar chart. The line graph enable users to interact with the map by the “mouse-over” trigger on the circle, after triggering, the line graph would show the exact date and the number of deaths by tooltip while expanding the radius of the circle on the line as an animated transition, and it would affect the deaths distribution on the map simultaneously.
+<br>
+<br>
+3. If users want to check the number of deaths in a few days, they could click the “open multi-sel” button and drag grey cube in the line chart to choose the range of times. And this could also affect the deaths distribution on the map simultaneously.
+<br>
+<br>
+4. This tool also supports one “click-button” trigger for gender identification and the other “click-button” trigger for age identification, users could click on those two buttons to see the male and female deaths, or to see the deaths distribution in different age on the map. Those buttons should be well-labeled and should trigger the color-differences shown on the map.
+<br>
+<br>
+5. Users could zoom in and out by scrollwheel to check each deaths location on the map in detail. If the map is zoomed in, it couldn’t affect the graph alongside.
+<br>
+<br>
+6. To design a color-blindness-friendly tool, I used dark-blue and orange-red as the diverging color for the male and female deaths identity. As for the 6 age ranges, I chose the sequential colors to show the ages from young to old.
+
+<br>
+<br>
+                  <h3 style="color:#43353A;font-family:Times;margin-left:35px">Questions and Findings</h3>
+                  <p style="color:#584b50;font-family:Georgia;text-align:justify;margin-left:35px;margin-right:0px">
+<br>
+                  Q1: Which group of people has the highest rate of death after infected by Cholera?
+<br>
+<br>
+According to the "US census data from 1850" the percentage of people older than 80 years old is only 1%, but after I checked the bar chart from the visualization which shows the distribution of deaths by sex and age overall, I found that the number of death people over eighties is the biggest. Therefore, we can tell from the bar chart that the old people over eighties is the high-risk group that would be easily infected and die from Cholera.
+<br>
+<br>
+<img src="https://farm5.staticflickr.com/4474/36615785694_af41be2005_z.jpg" width="640" height="378" alt="Bar Chart" align="middle"/>
+<br>
+<br>
+<br>
+Q2: Which area in London has the highest death rate?
+<br>
+<br>
+According to the map from the visualization, it seems that the area around Broad Street has the highest death rate. And there is only one pump there, since Dr. John Snow had discovered that pumps are the channel of Cholera disease infection. This pump on the Broad Street maybe the original infection source. It means that the Cholera disease may start the infection from this pump.
+<br>
+<br>
+<br>
+<br>
+<img src="https://farm5.staticflickr.com/4477/37069046270_c9d105b9d8_z.jpg" width="640" height="499" alt="Cholera Map"  align="middle"/>
+<br>
+<br>
+<br>
+<br>
+Q3: Now that the Broad Street area is the start of Cholera outbreak, then why no one dead in the Brewery next to the Broad Street?
+<br>
+<br>
+After I googled it, I found that all brewery workers were permitted to drink the beer in the brewery instead of drinking the water from the pump. Besides, the fermentation process during beer brewing could kill the Cholera disease. That’s the reason why people in the brewery all survived from the Cholera outbreak. And this could prove again that the pump maybe the infection source of London’s 1854 Cholera epidemic.
+
+
+
+                 </p>
+<br>
+<br>
+              </td>
+          </tr>
+    </table>
+    <table border="0">
+          <tr>
+              <td width=2000 align="middle">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qSv3F-zNFAQ" frameborder="0" allowfullscreen></iframe>  </td>
+</tr>
+</table>
+
+    <footer style="font-family:Georgia;
+      color:#43353A;
+      text-align:center;
+       margin-top:25px;
+       margin-right:35px;
+       margin-left:35px;
+      font-size:small
+     ">
+<br>
+<br>
+<br>
+<br>
+  <p>&copy; 2017 Interactive Cholera Map by Lin Zhao</p>
+  <p>Email: <a href="zhao15@iu.edu" >zhao15@iu.edu</a></p>
+</footer>
+  </body>
+  </html>
