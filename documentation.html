@@ -42,11 +42,10 @@
 
                   <h3 style="color:#43353A;font-family:Times;margin-left:35px">Design process and Rationale of my design choices</h3>
                     <p style="color:#584b50;font-family:Georgia;text-align:justify;margin-left:35px;margin-right:0px">
-                    <br>
-                    First, I need to find out what is the users’ requirement. The users want to see the whole deaths’ locations in the map, and they also have the requirement of encoding the number of deaths in each day by filtering different dates. It should affect both on the map and the graph. The users may want to know the difference number of deaths and locations between different sexes and ages, and they could easily see on the map whether each victim was male or female, or the age of each victim, and those could also change by dates. To help users conduct an investigation, this visualization tool should show the changes on the map and the graph simultaneously.
+                    In my design process, I want to make this interactive map as the tool that support the users’ key requirements. The users want to see the whole deaths’ locations in the map, and they also have the requirement of encoding the number of deaths in each day both on the map and the graph. Besides, the users may want to know the respective number of deaths and locations of different sexes and ages, and this interactive map should enable them to see whether each victim was male or female, or to see the age of each victim. Furthermore, to help users conduct an investigation, this visualization tool should show the changes on the map and the graph simultaneously.
                     <br>
 
-To fulfill those requirements of users, I made a list of the required functions of this tool:
+To fulfill those requirements of users, I made a list of the required functions and design thoughts of this tool:
 <br>
 <br>
 1. The tool shows parallel layout on the webpage for users to see both map and graphs at the same time.
@@ -55,10 +54,10 @@ To fulfill those requirements of users, I made a list of the required functions 
 2. This tool provides a line graph and a bar chart. The line graph enable users to interact with the map by the “mouse-over” trigger on the circle, after triggering, the line graph would show the exact date and the number of deaths by tooltip while expanding the radius of the circle on the line as an animated transition, and it would affect the deaths distribution on the map simultaneously.
 <br>
 <br>
-3. If users want to check the number of deaths in a few days, they could click the “open multi-sel” button and drag grey cube in the line chart to choose the range of times. And this could also affect the deaths distribution on the map simultaneously.
+3. If users want to check the number of deaths in a few days, they can click the “open multi-sel” button and drag grey cube in the line chart to choose the range of times. And this would also affect the deaths distribution on the map simultaneously.
 <br>
 <br>
-4. This tool also supports one “click-button” trigger for gender identification and the other “click-button” trigger for age identification, users could click on those two buttons to see the male and female deaths, or to see the deaths distribution in different age on the map. Those buttons should be well-labeled and should trigger the color-differences shown on the map.
+4. This tool also supports one “click-button” trigger for gender identification and the other “click-button” trigger for age identification, users could click on those two to see the male and female deaths, or to see the deaths distribution of different ages on the map. Those buttons should be well-labeled and should trigger the color-differences shown on the map.
 <br>
 <br>
 5. Users could zoom in and out by scrollwheel to check each deaths location on the map in detail. If the map is zoomed in, it couldn’t affect the graph alongside.
@@ -71,10 +70,10 @@ To fulfill those requirements of users, I made a list of the required functions 
                   <h3 style="color:#43353A;font-family:Times;margin-left:35px">Questions and Findings</h3>
                   <p style="color:#584b50;font-family:Georgia;text-align:justify;margin-left:35px;margin-right:0px">
 <br>
-                  Q1: Which group of people has the highest rate of death after infected by Cholera?
+ Q1: Which group of people has the highest rate of death after infected by Cholera?
 <br>
 <br>
-According to the "US census data from 1850" the percentage of people older than 80 years old is only 1%, but after I checked the bar chart from the visualization which shows the distribution of deaths by sex and age overall, I found that the number of death people over eighties is the biggest. Therefore, we can tell from the bar chart that the old people over eighties is the high-risk group that would be easily infected and die from Cholera.
+According to the "US census data from 1850", the percentage of people older than 80 years old is only 1%, but after I checked the bar chart from the visualization which shows the distribution of deaths by sex and age overall, I found that the number of death people over eighties is the highest. Therefore, we can tell from the bar chart that the old people over eighties is the high-risk group that would be easily infected and die from Cholera.
 <br>
 <br>
 <img src="https://farm5.staticflickr.com/4474/36615785694_af41be2005_z.jpg" width="640" height="378" alt="Bar Chart" align="middle"/>
@@ -84,7 +83,7 @@ According to the "US census data from 1850" the percentage of people older than 
 Q2: Which area in London has the highest death rate?
 <br>
 <br>
-According to the map from the visualization, it seems that the area around Broad Street has the highest death rate. And there is only one pump there, since Dr. John Snow had discovered that pumps are the channel of Cholera disease infection. This pump on the Broad Street maybe the original infection source. It means that the Cholera disease may start the infection from this pump.
+According to the map from the visualization, it seems that the area around Broad Street has the highest death rate. And there is only one pump there. Since we have already know that the water polluted by feces is a common channel of Cholera disease infection. This pump on the Broad Street maybe the original infection source. Which means that the Cholera disease may start the infection from this pump.
 <br>
 <br>
 <br>
@@ -94,11 +93,10 @@ According to the map from the visualization, it seems that the area around Broad
 <br>
 <br>
 <br>
-Q3: Now that the Broad Street area is the start of Cholera outbreak, then why no one dead in the Brewery next to the Broad Street?
+Q3: If the Broad Street area is where the Cholera outbreak started, then why no one dead in the Brewery next to the Broad Street according to the map, is there anything special about this brewery?
 <br>
 <br>
 After I googled it, I found that all brewery workers were permitted to drink the beer in the brewery instead of drinking the water from the pump. Besides, the fermentation process during beer brewing could kill the Cholera disease. That’s the reason why people in the brewery all survived from the Cholera outbreak. And this could prove again that the pump maybe the infection source of London’s 1854 Cholera epidemic.
-
 
 
                  </p>
