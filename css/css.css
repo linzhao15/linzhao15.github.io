@@ -1,0 +1,127 @@
+
+body{
+    background: white;
+}
+.map {
+  position:fixed;
+
+
+}
+.chart .legend {
+    fill: grey;
+    font: 10px Arial;
+    text-anchor: start;
+    font-size: 10px;
+}
+
+.chart text {
+    fill: white;
+    font: 10px Arial;
+    text-anchor: end;
+}
+
+.chart {
+  position: absolute;
+  top:30px;
+　left:50px;
+}
+
+.chart .label {
+    fill: grey;
+    font: 10px Arial;
+    text-anchor: end;
+}
+
+.title {
+    font: bold 10px;
+    font-family: Arial;
+}
+
+
+.bar:hover {
+    fill: #e62325;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: Arial;
+    font-size: 10px;
+    fill:grey;
+}
+
+.axislabel text {
+    font-family: Arial;
+    font-size: 10px;
+    fill:grey;
+}
+.hid{
+    /*display: none;*/
+}
+/*.hid div{
+    margin-left: 50px;
+    !*background-color: #fff*!
+}*/
+.legend{
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    background: #fff;
+    border: 2px solid #cdc9c9;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-right:60px;
+    text-align: center;
+    font-family: Arial;
+    line-height: 22px;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+    color: black;
+    cursor: pointer;
+}
+.legend_img{
+    border: 6px solid; width: 0; height: 0; display: inline-block;
+    border: 6px solid; width: 0; height: 0; display: inline-block;
+    border: 6px solid; width: 0; height: 0; display: inline-block;
+    border: 6px solid; width: 0; height: 0; display: inline-block;
+    border: 6px solid; width: 0; height: 0; display: inline-block;
+    border: 6px solid; width: 0; height: 0; display: inline-block;
+}
+#tips{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    min-width: 150px;
+    min-height: 50px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    border-radius: 3px;
+}
+#legend{
+    position: absolute;
+    right: 1020px;
+    bottom: 25px;
+}
+.axixL{
+    font-family:Arial !important;
+    font-size: 13px !important;
+    fill: black !important;
+    font-weight: bold  !important;
+}
+.extent{
+    fill: rgba(0,0,0,.4) !important;
+    stroke: #13A7A9 !important;
+}
+#ms{
+    position: absolute; top: 50px; right: 400px;
+    border-radius: 5px;
+    border: 2px solid #cdc9c9;
+    padding: 10px;
+    font-family: Arial;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+    cursor: pointer;
+}
