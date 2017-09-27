@@ -240,6 +240,14 @@ var age_color = d3.scale.ordinal().domain([0,1,2,3,4,5]).range([
 ]);
 var gender_color = d3.scale.ordinal().domain([0,1]).range(["#4682b4","#ff6347"]);
 //legend
+var legend = d3.selectAll(".legend");
+	legend.on('mousedown',function () {
+    d3.select(this).style("box-shadow",'0px 0px 0px rgba(0,0,0,.6)')
+});
+	legend.on('mouseup',function () {
+    d3.select(this).style("box-shadow",'5px 5px 5px rgba(0,0,0,.6)')
+});
+
 $(".legend").click(function () {
     LoopDeath.style('fill','red');
     var $this = $(this);
