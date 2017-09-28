@@ -219,7 +219,7 @@ var LoopDeathAttributes = LoopDeath
 //add name of path
 svgContainer.append('svg:image')
     .attr({
-        'xlink:href': 'img/streetNamesfinal-iloveimg-resized.png',  // can also add svg file here
+        'xlink:href': 'img/st.png',  // can also add svg file here
 
         x: 100*0.4,
 
