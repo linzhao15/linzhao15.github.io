@@ -42,14 +42,14 @@ for (var i=0; i<dataAge.labels.length; i++) {
 
 // Color scale
 
-var padding=40;
+var padding=0;
 var head_height=padding;
 var title = "hehe";
 var foot_height=padding;
 
 
 var color = d3.scale.ordinal()
-    .range(["#4682b4","#ff6347"]);
+    .range(["#3bd5f7","#ff6347"]);
 
 
 
@@ -143,7 +143,7 @@ chart.append('g')
     .attr("transform",'rotate(90,'+(margin.left-50)+','+(height+30)+')')
     .append('text')
     .attr('class','axixL')
-    .attr("x",margin.left-140)
+    .attr("x",margin.left-170)
     .attr('y',height+40)
     .html('Ages');
 //</editor-fold>
@@ -176,12 +176,12 @@ var LoopStreet = svgContainer.selectAll("line")
     .append("line");
 
 var LoopStreetAttributes = LoopStreet
-    .attr("x1", function (d) { return d.x1*40; })
+    .attr("x1", function (d) { return d.x1*40-98; })
     .attr("y1", function (d) { return height-d.y1*40; })
-    .attr("x2", function (d) { return d.x2*40; })
+    .attr("x2", function (d) { return d.x2*40-98; })
     .attr("y2", function (d) { return height-d.y2*40; })
     .attr("stroke-width", 1)
-    .attr("stroke", "black");
+    .attr("stroke", "grey");
 
 
 //var LoopPump = svg.selectAll("rect")
@@ -192,7 +192,7 @@ var LoopPump = svgContainer.selectAll("rect")
     .append("rect");
 
 var LoopPumpAttributes = LoopPump
-    .attr("x", function (d) { return d.x*40-d.width*2; })
+    .attr("x", function (d) { return d.x*40-d.width*2-98; })
     .attr("y", function (d) { return height-d.y*40-d.height*2; })
     .attr("width", function (d) { return d.width*4; })
     .attr("height", function (d) { return d.height*4; })
@@ -208,7 +208,7 @@ var LoopDeath = svgContainer.selectAll("circle")
     .append("circle");
 
 var LoopDeathAttributes = LoopDeath
-    .attr("cx", function (d) { return d.x_axis*40; })
+    .attr("cx", function (d) { return d.x_axis*40-98; })
     .attr("cy", function (d) { return height-d.y_axis*40; })
     .attr("r", function (d) { return d.radius*2; })
     .attr("stroke", "black")
@@ -221,14 +221,15 @@ svgContainer.append('svg:image')
     .attr({
         'xlink:href': 'img/streetNamesfinal-iloveimg-resized.png',  // can also add svg file here
 
-        x: 342*0.4,
+        x: 100*0.4,
 
         y: 77*0.4,
 
-        width: 1650*0.4,
+        width: 1651*0.4,
 
         height: 1650*0.4
     });
+
 
 var age_color = d3.scale.ordinal().domain([0,1,2,3,4,5]).range([
     "#f1eef6",
@@ -238,13 +239,26 @@ var age_color = d3.scale.ordinal().domain([0,1,2,3,4,5]).range([
     "#dd1c77",
     "#980043"
 ]);
-var gender_color = d3.scale.ordinal().domain([0,1]).range(["#4682b4","#ff6347"]);
+
+var gender_color = d3.scale.ordinal().domain([0,1]).range(["#3bd5f7","#ff6347"]);
+
+
+
+
 //legend
-$(".legend").click(function () {
+var legend = d3.selectAll(".legend");
+	legend.on('mousedown',function () {
+    d3.select(this).style("box-shadow",'0px 0px 0px rgba(0,0,0,.6)')
+});
+	legend.on('mouseup',function () {
+    d3.select(this).style("box-shadow",'5px 5px 5px rgba(0,0,0,.6)')
+});
+
+
+$(".legend").click(function (){
     LoopDeath.style('fill','red');
     var $this = $(this);
     var flag = $this.attr("data-switch");
-
     /*$(".legend").attr("data-switch","off");
     $(".hid").hide();*/
     if(flag === 'off'){
@@ -274,6 +288,8 @@ $(".legend").click(function () {
     }
 
 });
+
+
 
 /////////////////////////////////////////////line chart///////////////////////////////////////
 //death number with date
