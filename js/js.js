@@ -144,7 +144,7 @@ chart.append('g')
     .append('text')
     .attr('class','axixL')
     .attr("x",margin.left-170)
-    .attr('y',height+40)
+    .attr('y',height+30)
     .html('Ages');
 //</editor-fold>
 /////////////////////////////////////////////////map/////////////////////////////////////////////////////////////
@@ -251,7 +251,7 @@ var legend = d3.selectAll(".legend");
     d3.select(this).style("box-shadow",'0px 0px 0px rgba(0,0,0,.6)')
 });
 	legend.on('mouseup',function () {
-    d3.select(this).style("box-shadow",'5px 5px 5px rgba(0,0,0,.6)')
+    d3.select(this).style("box-shadow",'1px 1px 1px rgba(0,0,0,.6)')
 });
 
 
@@ -568,7 +568,7 @@ svg.append('g')
     .append('text')
     .attr('class','axixL')
     .attr("x",190)
-    .attr('y',height+40)
+    .attr('y',height+45)
     .html('Dates of Deaths');
 
 svg.append('g')
@@ -576,7 +576,7 @@ svg.append('g')
     .append('text')
     .attr('class','axixL')
     .attr("x",margin.left+40)
-    .attr('y',130)
+    .attr('y',135)
     .html('Number of Deaths');
 
 
@@ -606,7 +606,7 @@ ms.on('mousedown',function () {
     d3.select(this).style("box-shadow",'0px 0px 0px rgba(0,0,0,.6)')
 });
 ms.on('mouseup',function () {
-    d3.select(this).style("box-shadow",'5px 5px 5px rgba(0,0,0,.6)')
+    d3.select(this).style("box-shadow",'1px 1px 1px rgba(0,0,0,.6)')
 });
 ms.on('click',function () {
     var _this = d3.select(this);
