@@ -90,12 +90,12 @@ body{
 
 
 .legend_img{
-    border: 6px solid; width: 0; height: 0; display: inline-block;
-    border: 6px solid; width: 0; height: 0; display: inline-block;
-    border: 6px solid; width: 0; height: 0; display: inline-block;
-    border: 6px solid; width: 0; height: 0; display: inline-block;
-    border: 6px solid; width: 0; height: 0; display: inline-block;
-    border: 6px solid; width: 0; height: 0; display: inline-block;
+    border: 6px solid; border-radius: 50%; width: 0; height: 0; display: inline-block;
+    border: 6px solid; border-radius: 50%; width: 0; height: 0; display: inline-block;
+    border: 6px solid; border-radius: 50%; width: 0; height: 0; display: inline-block;
+    border: 6px solid; border-radius: 50%; width: 0; height: 0; display: inline-block;
+    border: 6px solid; border-radius: 50%; width: 0; height: 0; display: inline-block;
+    border: 6px solid; border-radius: 50%; width: 0; height: 0; display: inline-block;
 }
 #tips{
     display: none;
